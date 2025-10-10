@@ -1,0 +1,109 @@
+.body{
+    color:rgb(0, 32, 172);
+    background-color:rgb(255, 0, 0);
+}
+
+
+
+p{color:blue;}
+
+/*Mobile First Approach*/
+.container{
+    padding:10px;
+}
+
+/*Tablet*/
+@media(min-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+/*Desktop*/
+@media(min-width:1024px){
+    .container{
+        padding:30px;
+        max-width:1200px;
+        margin:0 auto;
+    }
+}
+
+/*Transition*/
+.button{
+    transition:all 0.3s ease;
+    color:rgb(0, 0, 0)
+}
+
+.button:hover{
+    transform:scale(1.1);
+    background-color:rgb(255, 0, 0)
+}
+
+/*Animation*/
+@keyframes fadein{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.element{
+    animation:fadein 1s ease-in;
+}
+
+header{
+    background:rgb(60, 255, 0);
+    color:rgb(172, 0, 0);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav{
+    color:rgb(221, 0, 0);
+    margin:0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    padding: 1rem;
+    display:flex;
+    gap: 1rem;
+}
+
+section{
+    flex: 2;
+    background:rgb(219, 0, 0);
+    padding: 1rem;
+    border-radius: 8;
+}
+
+article{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+aside{
+    flex: 1;
+    background: #e2e8f0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+footer{
+    text-align: center;
+    background: #1e3a8a;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.p{
+    color:#fff;
+    font-weight: bold;
+}
